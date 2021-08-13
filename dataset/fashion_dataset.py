@@ -42,8 +42,8 @@ def show_picture(images, labels, row, col):
         index = index + 1
     pyplot.show()
 
-# 显示图片示例代码
-# datapath = "D:\Py_project\My_fashionmnist\data"
+# # 显示图片示例代码
+# datapath = "D:\Py_project\pytorch_FashionMnist\data"
 # mnist_train,mnist_test = load_data_fashion_mnist(datapath, batch_size=18)
 # print(len(mnist_train),len(mnist_test))
 # dataiter = iter(mnist_train)
