@@ -1,6 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from tensorboardX import SummaryWriter  # 用于进行可视化
+from torchviz import make_dot
 
 class Mfnet_pyramid(nn.Module):
     def __init__(self):
@@ -56,3 +58,10 @@ class Mfnet_pyramid(nn.Module):
 # batch_size = 2
 # ino = torch.randn(batch_size, in_channels, width, height)
 # output = net(ino)
+#
+# # 1. 来用tensorflow进行可视化
+# with SummaryWriter("./log", comment="sample_model_visualization") as sw:
+#     sw.add_graph(net, ino)
+#
+# # 2. 保存成pt文件后进行可视化
+# torch.save(net, "./log/modelviz.pt")

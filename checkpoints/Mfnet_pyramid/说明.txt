@@ -1,0 +1,3 @@
+learning rate=0.001
+训练50个epoch
+第30个epoch时在测试集上正确率最大，为91.98%
